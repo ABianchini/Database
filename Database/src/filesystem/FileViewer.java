@@ -18,10 +18,14 @@ public class FileViewer {
 	public static void viewFile() throws FileNotFoundException {
 		File[] files = FileLister.getFilesArrayFile();
 		int selection = FileChooser.chooseFile();
-		Scanner in = new Scanner(files[selection]);
-		while(in.hasNextLine()) {
-			String inLine = in.nextLine();
-			System.out.println(inLine);
+		if (selection < files.length) {
+			Scanner in = new Scanner(files[selection]);
+			while(in.hasNextLine()) {
+				String inLine = in.nextLine();
+				System.out.println(inLine);
+			}
+		} else {
+			System.out.println("No such file exists");
 		}
 	}
 }

@@ -24,6 +24,7 @@ public class MainMenu {
 			case 4:
 				break menuLoop;
 			}
+			System.out.println();
 			System.out.println("Enter menu selection:\n1 Create File\n2 Open File\n3 Edit File\n4 Exit");
 		}
 	}
