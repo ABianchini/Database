@@ -50,10 +50,11 @@ public class FileViewer {
 				String outLine = new String(outLinePieces);
 				System.out.println(outLine);
 			}
+			System.out.println(">Press Enter when done reading.");
+			input.nextLine();
 		} else {
 			System.out.println("No such file exists");
 		}
-		System.out.println(">Press Enter when done reading.");
-		input.nextLine();
+		
 	}
 }
