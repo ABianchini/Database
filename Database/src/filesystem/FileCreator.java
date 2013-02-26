@@ -11,6 +11,11 @@ public class FileCreator {
 		String fileName = in.nextLine() + ".txt";
 		boolean exist = false;
 		
+		String directory = "C:\\Files\\west.txt";
+		PrintWriter dir = new PrintWriter(directory);
+		dir.print("");
+		dir.close();
+		
 		String[] files = FileLister.getFilesArrayString();
 		for (int i = 0; i < files.length; i++) {
 			if (files[i].equals(fileName)) {
