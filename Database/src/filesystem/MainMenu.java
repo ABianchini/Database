@@ -8,10 +8,10 @@ public class MainMenu {
 		Scanner in = new Scanner(System.in);
 		String password = "star";
 		
-		System.out.println("Please enter the database password:");
+		System.out.println(">Enter the database password:");
 		String passIn = in.nextLine();
 		if(passIn.equals(password)) {
-			System.out.println("Enter menu selection:\n1 Create File\n2 Open File\n3 Edit File\n4 Delete File\n5 Exit");
+			System.out.println(">Enter menu selection:\n1 Create File\n2 Open File\n3 Edit File\n4 Delete File\n5 Exit");
 			menuLoop:
 			while (true) {
 				int menuChoice = in.nextInt();
@@ -32,10 +32,10 @@ public class MainMenu {
 					break menuLoop;
 				}
 				System.out.println();
-				System.out.println("Enter menu selection:\n1 Create File\n2 Open File\n3 Edit File\n4 Delete File\n5 Exit");
+				System.out.println(">Enter menu selection:\n1 Create File\n2 Open File\n3 Edit File\n4 Delete File\n5 Exit");
 			}
 		} else {
-			System.out.println("Access Denied");
+			System.out.println(">Access Denied");
 		}
 	}
 }

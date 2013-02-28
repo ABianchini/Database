@@ -9,12 +9,12 @@ public class FileDeleter {
 		if (selection < files.length) {
 			boolean success = files[selection].delete();
 			if (success) {
-				System.out.println("File successfully deleted");
+				System.out.println(">File successfully deleted");
 			} else {
-				System.out.println("File NOT deleted");
+				System.out.println(">File NOT deleted");
 			}
 		} else {
-			System.out.println("No such file exists");
+			System.out.println(">No such file exists");
 		}
 	}
 	
@@ -24,12 +24,12 @@ public class FileDeleter {
 		if (selection < files.length) {
 			boolean success = files[selection].delete();
 			if (success) {
-				System.out.println("File successfully deleted");
+				System.out.println(">File successfully deleted");
 			} else {
-				System.out.println("File NOT deleted");
+				System.out.println(">File NOT deleted");
 			}
 		} else {
-			System.out.println("No such file exists");
+			System.out.println(">No such file exists");
 		}
 	}
 }

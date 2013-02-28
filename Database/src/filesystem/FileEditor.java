@@ -44,7 +44,7 @@ public class FileEditor {
 		}
 		
 		System.out.println();
-		System.out.println("Enter line to append. Type \"exit\" to stop appending lines.");
+		System.out.println(">Enter line to append. Type \"exit\" to stop appending lines.");
 		String input = "";
 		
 		
@@ -123,7 +123,7 @@ public class FileEditor {
 		}
 		
 		System.out.println();
-		System.out.println("Enter line to append. Type \"exit\" to stop appending lines.");
+		System.out.println(">Enter line to append. Type \"exit\" to stop appending lines.");
 		String input = "";
 		
 		

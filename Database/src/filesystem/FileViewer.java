@@ -53,7 +53,7 @@ public class FileViewer {
 			System.out.println(">Press Enter when done reading.");
 			input.nextLine();
 		} else {
-			System.out.println("No such file exists");
+			System.out.println(">No such file exists");
 		}
 		
 	}
